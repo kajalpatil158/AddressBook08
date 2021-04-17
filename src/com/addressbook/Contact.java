@@ -1,92 +1,97 @@
 package com.addressbook;
 
 public class Contact {
-	public class Contacts {
-		private String firstName;
-		private String lastName;
-		private String address;
-		private String city;
-		private String state;
-		private int zip;
-		private int phoneNumber;
-		private String email;
 
-		public Contacts(String firstName, String lastName, String address, String city, String state, int zip,
-				int phoneNumber, String email) {
-			this.firstName = firstName;
-			this.lastName = lastName;
-			this.address = address;
-			this.city = city;
-			this.state = state;
-			this.zip = zip;
-			this.phoneNumber = phoneNumber;
-			this.email = email;
-		}
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String city;
+	private String state;
+	private int zip;
+	private int phoneNumber;
+	private String email;
 
-		public String getFirstName() {
-			return firstName;
-		}
+	public Contact(String firstName, String lastName, String address, String city, String state, int zip,
+			int phoneNumber, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+		this.phoneNumber = phoneNumber;
+		this.email = email;
+	}
 
-		public String getLastName() {
-			return lastName;
-		}
+	public String getFirstName() {
+		return firstName;
+	}
 
-		public String getAddress() {
-			return address;
-		}
+	public String getLastName() {
+		return lastName;
+	}
 
-		public String getCity() {
-			return city;
-		}
+	public String getAddress() {
+		return address;
+	}
 
-		public String getState() {
-			return state;
-		}
+	public String getCity() {
+		return city;
+	}
 
-		public int getZip() {
-			return zip;
-		}
+	public String getState() {
+		return state;
+	}
 
-		public int getPhoneNumber() {
-			return phoneNumber;
-		}
+	public int getZip() {
+		return zip;
+	}
 
-		public String getEmail() {
-			return email;
-		}
+	public int getPhoneNumber() {
+		return phoneNumber;
+	}
 
-		public void setFirstName(String firstName) {
-			this.firstName = firstName;
-		}
+	public String getEmail() {
+		return email;
+	}
 
-		public void setLastName(String lastName) {
-			this.lastName = lastName;
-			;
-		}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-		public void setAddress(String address) {
-			this.address = address;
-		}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+		;
+	}
 
-		public void setCity(String city) {
-			this.city = city;
-		}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-		public void setState(String state) {
-			this.state = state;
-		}
+	public void setCity(String city) {
+		this.city = city;
+	}
 
-		public void setZip(int zip) {
-			this.zip = zip;
-		}
+	public void setState(String state) {
+		this.state = state;
+	}
 
-		public void setPhoneNumber(int phoneNumber) {
-			this.phoneNumber = phoneNumber;
-		}
+	public void setZip(int zip) {
+		this.zip = zip;
+	}
 
-		public void setEmail(String email) {
-			this.email = email;
-		}
+	public void setPhoneNumber(int phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String toString() {
+		return "firstName=" + firstName + ", \n" + "lastName=" + lastName + ",\n" + "address=" + address + ",\n"
+				+ "city=" + city + ",\n" + "state=" + state + ",\n" + "email=" + email + ",\n" + "zip=" + zip + ",\n"
+				+ "phoneNumber=" + phoneNumber + "\n";
 	}
 
 }
